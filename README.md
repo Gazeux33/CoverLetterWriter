@@ -7,3 +7,5 @@ https://app.tavily.com
 https://console.mistral.ai/billing
 
 https://lmstudio.ai/
+
+https://www.youtube.com/watch?v=yF9kGESAi3M
