@@ -1,0 +1,141 @@
+{
+    "person": {
+      "prenom": "Theo",
+      "nom": "Castillo",
+      "age": "19 ans",
+      "ville": "Bordeaux",
+      "étude": "2 eme année BUT Informatique de Gradignan",
+      "qualités": [
+        "Determiné",
+        "Passionné",
+        "Motivé"
+      ],
+      "passions": [
+        "Formule 1",
+        "Echec",
+        "Voyage",
+        "jeux de société"
+      ],
+      "competences": {
+        "Languages": [
+          "Python",
+          "Java",
+          "Html",
+          "Css",
+          "Javascript",
+          "PHP",
+          "Haskell",
+          "C++",
+          "C#",
+          "C"
+        ],
+        "Technologies": [
+          "TensorFlow",
+          "PyTorch",
+          "GitHub",
+          "VScode",
+          "Ubuntu",
+          "MacOs",
+          "Jupyter",
+          "HuggingFace",
+          "Kaggle",
+          "AWS",
+          "Django",
+          "Sql",
+          "Symfony",
+          "Git",
+          "React",
+          "Numpy",
+          "Matplotlib",
+          "Yolo",
+          "A*",
+          "OpenGL",
+          "SFML",
+          "Alpaca.py",
+          "Pygame",
+          "JetBrain",
+          "Docker"
+        ]
+      },
+      "how_i_work": [
+        "VScode",
+        "GitHub",
+        "Ubuntu",
+        "MacOs",
+        "Jupyter",
+        "HuggingFace",
+        "Kaggle"
+      ],
+      "projets_informatiques": [
+        {
+          "name": "Large Language Model",
+          "description": "Developed a French LLM using PyTorch for language modeling in Python."
+        },
+        {
+          "name": "Neural Networks Library",
+          "description": "Created a modular library with Numpy for neural network computations in Python."
+        },
+        {
+          "name": "Neural Style Transfer",
+          "description": "Implemented image style transfer using PyTorch to modify images' aesthetics."
+        },
+        {
+          "name": "Generative Adversial Network",
+          "description": "Trained a WGAN-GP model with CelebA data to generate synthetic faces using PyTorch."
+        },
+        {
+          "name": "Cellular Automata 3D Renderer",
+          "description": "Built a library with OpenGL in Python for visualizing cellular automata."
+        },
+        {
+          "name": "TradeFormer",
+          "description": "Developed a financial forecasting model using AutoFormer and Alpaca.py with PyTorch for trading predictions."
+        },
+        {
+          "name": "Diffusion Model",
+          "description": "Implemented a diffusion model to generate synthetic cat images from noise using PyTorch."
+        },
+        {
+          "name": "VAE (Variational Autoencoder)",
+          "description": "Trained VAEs in PyTorch for generating synthetic data via anomaly detection."
+        },
+        {
+          "name": "Maze Generator and Solver",
+          "description": "Used the A* algorithm with pygame to create and solve mazes in Python."
+        },
+        {
+          "name": "Graph Visualizer",
+          "description": "Created a JavaFX desktop app with search algorithms for graph visualization in Java."
+        },
+        {
+          "name": "Car Plates Detection",
+          "description": "Deployed two YOLOv8 models with PyTorch for detecting car plates in Python."
+        },
+        {
+          "name": "Snake AI",
+          "description": "Trained a neural network to control the Snake game in pygame using PyTorch."
+        },
+        {
+          "name": "Connect4 AI",
+          "description": "Utilized Monte Carlo Tree Search in pygame to solve Connect4 optimally."
+        },
+        {
+          "name": "Particles Simulation",
+          "description": "Simulated particles with SFML and C++ for physics-based animations."
+        },
+        {
+          "name": "Procedural Generation",
+          "description": "Used Perlin Noise with P5.js to generate procedural maps for terrain generation."
+        },
+        {
+          "name": "Towa AI",
+          "description": "Developed an AI for the Towa chessboard game using Java for strategic gameplay."
+        },
+        {
+          "name": "MySuperHoroscope",
+          "description": "Built a Django-powered e-commerce site in Python for horoscope sales."
+        }
+      ]
+    }
+  }
+  
