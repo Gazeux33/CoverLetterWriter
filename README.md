@@ -1,7 +1,3 @@
-# Système de résumé de documents
-# Agent de recherche automatisée
-# Google agenda
-# Agent pour redigier une lettre de motivation
 
 
 https://github.com/Bredda/genai-talk-notebooks
