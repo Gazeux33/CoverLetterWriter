@@ -20,6 +20,8 @@ DATA_PATH = "data.json"
 #TODO : refactor code
 #TODO : Add Documentation
 #TODO : Add offer
+#TODO : Write README
+#TODO : make plan
 
 
 class CoverLetterWriter:
