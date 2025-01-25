@@ -24,6 +24,7 @@ TAVILY_API_KEY=<your key>
 ### Setup your local llm
 
 To run this project you need a local llm on a local server. For this you can use [LM Studio](https://lmstudio.ai/)
+Recommended model : [meta-llama-3.1-8b-instruct](https://huggingface.co/lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF)
 
 ### Fill your data
 
