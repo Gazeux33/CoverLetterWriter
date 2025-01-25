@@ -33,17 +33,17 @@ logging.basicConfig(
 
 #TODO : refactor code
 #TODO : Add offer
-#TODO : Write README
-#TODO : make plan
 #TODO : add args parser
 
 
 class CoverLetterWriter:
-    def __init__(self) -> None:
-        self.language = "fr"
+    def __init__(self,language:str,path_offer:str) -> None:
+        self.language = language
+        if path_offer:
+            self.offer = self.load_txt(path_offer)
         self.logger = logging.getLogger("writer_app")
         self.model:ChatOpenAI = self._get_model()
-        self.data : dict = self._get_data()
+        self.data : dict = self._load_json(DATA_PATH)
         self.chain : RunnableLambda = self._get_final_chain()
         
         
@@ -57,7 +57,10 @@ class CoverLetterWriter:
             str: The generated cover letter.
         """
         self.logger.info(f"Generating cover letter for {company_name}")
-        result = self.chain.invoke({"company_name" : company_name})
+        try:
+            result = self.chain.invoke({"company_name" : company_name})
+        except Exception as e:
+            self.logger.error(f"Error generating cover letter : {e}")
         self.logger.info(f"Cover letter generated")
         if OUTPUT_DIR:
             self._save_result(result,company_name)
@@ -164,9 +167,10 @@ class CoverLetterWriter:
         return write_prompt
 
     
-    def _get_data(self) -> dict:
+    def _load_json(self,path:str) -> dict:
         """
-        Reads JSON data from a file specified by DATA_PATH.
+        Reads JSON data from a file specified by path.
+
         Returns:
             dict: The JSON data loaded from the file.
         """
@@ -175,6 +179,18 @@ class CoverLetterWriter:
                 return json.load(f)
         except Exception as e:
             self.logger.error(f"Error loading data : {e}")
+
+    def _load_txt(self,path:str) -> str:
+        """
+        Reads text data from a file specified by path.
+        Returns:
+            str: The text data loaded from the file.
+        """
+        try:
+            with open(path) as f:
+                return f.read()
+        except Exception as e:
+            self.logger.error(f"Error loading text data : {e}")
     
     def _save_result(self, result:str,company_name:str) -> None:
         """
