@@ -33,10 +33,9 @@ logging.basicConfig(
 
 
 class CoverLetterWriter:
-    def __init__(self,language:str,path_offer:str) -> None:
+    def __init__(self,language:str,offer_path:str) -> None:
         self.language = language
-        if path_offer:
-            self.offer = self.load_txt(path_offer)
+        self.offer = self._load_txt(offer_path) if offer_path else "no offer"
         self.logger = logging.getLogger("writer_app")
         self.model:ChatOpenAI = self._get_model()
         self.data : dict = self._load_json(DATA_PATH)
@@ -150,6 +149,7 @@ class CoverLetterWriter:
         ("human",""" 
         template : {template}
         profil : {profil} 
+        offer : {offer}
         company_data : {company_data}
          language : {language}"""),
         ]
@@ -158,6 +158,7 @@ class CoverLetterWriter:
             prompt=self.data["write_prompt"],
             profil=self.data["profil"],
             template=self.data["template"],
+            offer=self.offer,
             language=self.language)
         self.logger.info(f"Write prompt template : {write_prompt}")
         return write_prompt
