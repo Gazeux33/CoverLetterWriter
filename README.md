@@ -4,7 +4,7 @@ This project is an ia agent created with langchain in python and which aims to c
  - [Tavily Rrsearch tool](https://app.tavily.com)
  - [Langchain documentation](https://python.langchain.com/docs/tutorials/)
 
-![Chain graph](https://github.com/Gazeux33/CoverLetterWriter/blob/master/assets/chain_graph.png)
+![Chain graph](https://github.com/Gazeux33/CoverLetterWriter/blob/master/assets/graph_chain.png)
 
 
 
