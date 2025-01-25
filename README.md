@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ```
 
 ### Fill API key
-you need to in the ```.env``` file with your tavily APi Key
+you need to fill the ```.env``` file with your tavily APi Key
 ```bash 
 TAVILY_API_KEY=<your key>
 ```
@@ -27,13 +27,19 @@ To run this project you need a local llm on a local server. For this you can use
 
 ### Fill your data
 
-Then your own data in the ```profil.json``` eand your own template in ```data.json```
+Then your own data in the ```data.json``` 
 
 ### Run it
 
+```bash
+python main.py -n "Company Name"
 
+# Generate a cover letter in English
+python main.py -n "Company Name" -l "en"
 
-
+# Generate a cover letter with a specific job offer
+python main.py -n "Company Name" -l "en" -o "path/to/job_offer.txt"
+```
 
 
 
