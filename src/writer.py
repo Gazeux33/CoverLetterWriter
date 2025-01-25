@@ -31,10 +31,6 @@ logging.basicConfig(
     ]
 )
 
-#TODO : refactor code
-#TODO : Add offer
-#TODO : add args parser
-
 
 class CoverLetterWriter:
     def __init__(self,language:str,path_offer:str) -> None:
