@@ -35,6 +35,7 @@ logging.basicConfig(
 #TODO : Add offer
 #TODO : Write README
 #TODO : make plan
+# TODO : add args parser
 
 
 class CoverLetterWriter:
