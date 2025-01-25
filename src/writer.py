@@ -32,7 +32,7 @@ logging.basicConfig(
 )
 
 
-class CoverLetterWriter:
+class MotivAI:
     def __init__(self,language:str,offer_path:str) -> None:
         self.language = language
         self.offer = self._load_txt(offer_path) if offer_path else "no offer"
