@@ -1,4 +1,4 @@
-# Cover Letter Writer
+# MotivAI
 This project is an ia agent created with langchain in python and which aims to create cover letters by being able to search the internet for information on the company in question and adapt to a template letter, your profile and a job offer if there is one, using the power of an llm of your choice.
 
  - [Tavily Rrsearch tool](https://app.tavily.com)
