@@ -27,7 +27,7 @@ To run this project you need a local llm on a local server. For this you can use
 
 ### Fill your data
 
-Then your own data in the ```profil.json``` et your own template in ```data.json```
+Then your own data in the ```profil.json``` eand your own template in ```data.json```
 
 ### Run it
 
