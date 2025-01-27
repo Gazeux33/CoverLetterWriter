@@ -1,4 +1,4 @@
-from src.writer import CoverLetterWriter
+from src.writer import MotivAI
 import argparse
 
 
@@ -11,5 +11,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
 
-    writer = CoverLetterWriter(language=args.language, offer_path=args.offer)
+    writer = MotivAI(language=args.language, offer_path=args.offer)
     writer.generate_cover_letter(args.company_name)
